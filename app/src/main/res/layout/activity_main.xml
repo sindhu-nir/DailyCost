@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1aac79"
+    tools:context="com.example.root.dailycost.MainActivity">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily Cost For Only kalar Monitor"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/header_textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/header_textView"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/dateTime_textView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/dateTime_textView"
+        android:id="@+id/linear_layout1"
+        android:layout_marginTop="60dp">
+    <ImageButton
+        android:id="@+id/bensonImane_button"
+        android:layout_width="0dp"
+        android:layout_weight=".3"
+        android:layout_height="wrap_content"
+        android:onClick="OnBensonImageClick"
+        android:background="@android:color/transparent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/bensonPrice_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:layout_marginLeft="20dp"
+            android:text="0.0"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/bensonPriceReset_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="Refresh"
+            android:onClick="bensonRefresh"
+            android:textAlignment="center"
+            android:layout_marginLeft="5dp"
+            android:background="#0cca12"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linear_layout1"
+        android:id="@+id/linear_layout2"
+        android:layout_marginTop="40dp">
+
+        <ImageButton
+            android:id="@+id/goldLeafImane_button"
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:layout_height="wrap_content"
+            android:onClick="OnGoldLeafImageClick"
+            android:background="@android:color/transparent"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/goldLeafPrice_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:layout_marginLeft="20dp"
+            android:text="0.0"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/goldLeafPriceReset_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="Refresh"
+            android:onClick="goldLeafRefresh"
+            android:textAlignment="center"
+            android:layout_marginLeft="5dp"
+            android:background="#0cca12"/>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linear_layout2"
+        android:id="@+id/linear_layout3"
+        android:layout_marginTop="40dp">
+
+        <ImageButton
+            android:id="@+id/teaImane_button"
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:layout_height="wrap_content"
+            android:onClick="OnteaImageClick"
+            android:background="@android:color/transparent"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/teaPrice_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:layout_marginLeft="20dp"
+            android:text="0.0"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/teaPriceReset_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="Refresh"
+            android:onClick="teaRefresh"
+            android:textAlignment="center"
+            android:layout_marginLeft="5dp"
+            android:background="#0cca12"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linear_layout3"
+        android:id="@+id/linear_layout4"
+        android:layout_marginTop="40dp">
+
+        <ImageButton
+            android:id="@+id/otherImane_button"
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:layout_height="wrap_content"
+            android:onClick="OnotherImageClick"
+            android:background="@android:color/transparent"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/otherPrice_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:layout_marginLeft="20dp"
+            android:text="0.0"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/otherPriceReset_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="Refresh"
+            android:onClick="otherRefresh"
+            android:textAlignment="center"
+            android:layout_marginLeft="5dp"
+            android:background="#0cca12"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linear_layout4"
+        android:id="@+id/linear_layout5"
+        android:layout_marginTop="60dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:layout_marginRight="5dp"
+            android:text="Get Total"
+            android:id="@+id/total_button"
+            android:onClick="OntotalButtonClick"
+            android:background="#0c85ca"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linear_layout5"
+        android:id="@+id/linear_layout6"
+        android:layout_marginTop="60dp">
+
+   <ImageButton
+       android:layout_width="0dp"
+       android:layout_height="fill_parent"
+       android:layout_weight=".4"
+       android:id="@+id/viewTodayImage_button"
+       app:srcCompat="@mipmap/ic_launcher"
+       android:layout_marginRight="5dp"
+       android:onClick="viewTodaysSpends"
+       android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight=".4"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/deleteImage_button"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:onClick="deleteAllRecords"
+            android:background="@android:color/transparent"/>
+
+
+    </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>
