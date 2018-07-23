@@ -15,7 +15,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Daily Cost For Only kalar Monitor"
+        android:text="Daily Cost"
         android:layout_marginTop="20dp"
         android:textSize="20sp"
         android:layout_centerHorizontal="true"
@@ -36,15 +36,15 @@
         android:orientation="horizontal"
         android:layout_below="@id/dateTime_textView"
         android:id="@+id/linear_layout1"
-        android:layout_marginTop="60dp">
-    <ImageButton
-        android:id="@+id/bensonImane_button"
-        android:layout_width="0dp"
-        android:layout_weight=".3"
-        android:layout_height="wrap_content"
-        android:onClick="OnBensonImageClick"
-        android:background="@android:color/transparent"
-        app:srcCompat="@mipmap/ic_launcher" />
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:id="@+id/bensonImane_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/benson"
+            android:onClick="OnBensonImageClick" />
 
         <TextView
             android:id="@+id/bensonPrice_textView"
@@ -65,8 +65,9 @@
             android:text="Refresh"
             android:onClick="bensonRefresh"
             android:textAlignment="center"
-            android:layout_marginLeft="5dp"
-            android:background="#0cca12"/>
+            android:layout_marginLeft="25dp"
+            android:background="#0cca12"
+            android:layout_marginTop="5dp"/>
 
     </LinearLayout>
 
@@ -80,12 +81,12 @@
 
         <ImageButton
             android:id="@+id/goldLeafImane_button"
-            android:layout_width="0dp"
-            android:layout_weight=".3"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
             android:onClick="OnGoldLeafImageClick"
-            android:background="@android:color/transparent"
-            app:srcCompat="@mipmap/ic_launcher" />
+            android:background="@drawable/goldleaf"
+            />
 
         <TextView
             android:id="@+id/goldLeafPrice_textView"
@@ -106,8 +107,9 @@
             android:text="Refresh"
             android:onClick="goldLeafRefresh"
             android:textAlignment="center"
-            android:layout_marginLeft="5dp"
-            android:background="#0cca12"/>
+            android:layout_marginLeft="25dp"
+            android:background="#0cca12"
+            android:layout_marginTop="5dp"/>
 
         </LinearLayout>
 
@@ -122,12 +124,12 @@
 
         <ImageButton
             android:id="@+id/teaImane_button"
-            android:layout_width="0dp"
-            android:layout_weight=".3"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
             android:onClick="OnteaImageClick"
-            android:background="@android:color/transparent"
-            app:srcCompat="@mipmap/ic_launcher" />
+            android:background="@drawable/tea"
+            />
 
         <TextView
             android:id="@+id/teaPrice_textView"
@@ -148,8 +150,9 @@
             android:text="Refresh"
             android:onClick="teaRefresh"
             android:textAlignment="center"
-            android:layout_marginLeft="5dp"
-            android:background="#0cca12"/>
+            android:layout_marginLeft="25dp"
+            android:background="#0cca12"
+            android:layout_marginTop="5dp"/>
 
 
     </LinearLayout>
@@ -165,12 +168,12 @@
 
         <ImageButton
             android:id="@+id/otherImane_button"
-            android:layout_width="0dp"
-            android:layout_weight=".3"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
             android:onClick="OnotherImageClick"
-            android:background="@android:color/transparent"
-            app:srcCompat="@mipmap/ic_launcher" />
+            android:background="@drawable/other"
+            />
 
         <TextView
             android:id="@+id/otherPrice_textView"
@@ -191,8 +194,9 @@
             android:text="Refresh"
             android:onClick="otherRefresh"
             android:textAlignment="center"
-            android:layout_marginLeft="5dp"
-            android:background="#0cca12"/>
+            android:layout_marginLeft="25dp"
+            android:background="#0cca12"
+            android:layout_marginTop="5dp"/>
 
     </LinearLayout>
 
